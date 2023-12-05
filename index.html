@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>GIF Pronunciation</title>
+  <style>
+    .intro {
+      background-color:green;
+    }
+    body {
+      background-color:orange;
+    }
+    a {
+      text-decoration:none;
+      color:red;
+    }
+    a:hover {
+      color:yellow;
+      text-decoration:underline;
+    }
+.untrue {
+color:white;
+}
+.cool {
+background-color:plum;
+}
+  </style>
+</head>
+<body>
+  <div class="intro">
+    <br>
+    <p>A marvelous inquiry that has plagued linguists for quite some time: the correct pronunciation of GIF.</p>
+    <br>
+    <a href="https://www.youtube.com/watch?v=12kGC38MUiI">This video is <span class="untrue">invalid</span>: it claims that both are accurate.</a>
+  </div>
+<div class="cool">
+<p>Complete this form for the correct pronunciation:</p>
+<br>
+<input type="text" placeholder="Name" id="great">
+<br>
+<input type="text" placeholder="Your Pronunciation Hypothesis" id="say">
+<br>
+<input type="submit" value="Submit" id="submit">
+<br>
+<p id="par"></p>
+</div>
+<script>
+document.getElementById("submit").addEventListener("click", function () {
+    var par = document.getElementById("par");
+    var say = document.getElementById("say").value;
+    var bologna = document.getElementById("great").value;
+
+    if (say === "gif") {
+        par.textContent = "You are incorrect, " + bologna;
+       par.style.color = "red";
+    } else if (say === "jif") {
+        par.textContent = "You are correct, " + bologna;
+    } else {
+        par.textContent = "You are incorrect, " + bologna;
+      par.style.color = "red";
+    }
+});
+  </script>
+</body>
+</html>
