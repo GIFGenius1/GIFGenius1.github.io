@@ -5,27 +5,27 @@
   <title>GIF Pronunciation</title>
   <style>
     .intro {
-      background-color:green;
+      background-color: green;
     }
     body {
-      background-color:orange;
+      background-color: orange;
     }
     a {
-      text-decoration:none;
-      color:red;
+      text-decoration: none;
+      color: red;
     }
     a:hover {
-      color:yellow;
-      text-decoration:underline;
+      color: yellow;
+      text-decoration: underline;
     }
-.untrue {
-color:white;
-}
-.cool {
-background-color:plum;
-}
+    .untrue {
+      color: white;
+    }
+    .cool {
+      background-color: plum;
+    }
     .one {
-      color:pink;
+      color: pink;
     }
   </style>
 </head>
@@ -38,37 +38,40 @@ background-color:plum;
     <br>
     <p>Postscript: Team 1 is <span class="one">brilliant</span>, and are undoubtedly the reigning champions!</p>
     <br>
-    <button type="button" onclick = "coolMan()">Click here for something brilliant.</button>
+    <button type="button" onclick="coolMan()">Click here for something brilliant.</button>
   </div>
-<div class="cool">
-<p>Complete this form for the correct pronunciation:</p>
-<br>
-<input type="text" placeholder="Name" id="great" required>
-<br>
-<input type="text" placeholder="Your Pronunciation Hypothesis" id="say" required>
-<br>
-<input type="submit" value="Submit" id="submit">
-<br>
-<p id="par"></p>
-</div>
-<script>
-  function coolMan() {
+  <div class="cool">
+    <p>Complete this form for the correct pronunciation:</p>
+    <br>
+    <input type="text" placeholder="Name" id="great" required>
+    <br>
+    <input type="text" placeholder="Your Pronunciation Hypothesis" id="say" required>
+    <br>
+    <input type="submit" value="Submit" id="submit">
+    <br>
+    <p id="par"></p>
+  </div>
+  <script>
+    function coolMan() {
       alert("I am fond of consuming delightful toots that have evacuated by buttocks.");
     }
-document.getElementById("submit").addEventListener("click", function () {
-    var par = document.getElementById("par");
-    var say = document.getElementById("say").value;
-    var bologna = document.getElementById("great").value;
-    if (say === "gif") {
+
+    document.getElementById("submit").addEventListener("click", function () {
+      var par = document.getElementById("par");
+      var say = document.getElementById("say").value;
+      var bologna = document.getElementById("great").value;
+
+      if (say === "gif") {
         par.textContent = "You are ridiculously incorrect, " + bologna;
-       par.style.color = "red";
-    } else if (say === "jif") {
+        par.style.color = "red";
+      } else if (say === "jif") {
         par.textContent = "You are correct, " + bologna;
-      par.style.color = "black";
-    } else {
+        par.style.color = "black";
+      } else {
         par.textContent = "You are incorrect, " + bologna;
-      par.style.color = "red";
-});
+        par.style.color = "red";
+      }
+    });
   </script>
 </body>
 </html>
