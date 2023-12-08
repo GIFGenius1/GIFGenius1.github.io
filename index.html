@@ -38,7 +38,7 @@ background-color:plum;
     <br>
     <p>Postscript: Team 1 is <span class="one">brilliant</span>, and are undoubtedly the reigning champions!</p>
     <br>
-    <button type=button" onClick = "coolMan()">Click here for something brilliant</button>
+    <button type=button" onClick = "coolMan()">Click here for something brilliant.</button>
   </div>
 <div class="cool">
 <p>Complete this form for the correct pronunciation:</p>
@@ -56,7 +56,9 @@ document.getElementById("submit").addEventListener("click", function () {
     var par = document.getElementById("par");
     var say = document.getElementById("say").value;
     var bologna = document.getElementById("great").value;
-
+  function coolMan {
+    alert("I am fond of consuming delightful toots that have evacuated by buttocks.");
+  }
     if (say === "gif") {
         par.textContent = "You are ridiculously incorrect, " + bologna;
        par.style.color = "red";
@@ -66,10 +68,6 @@ document.getElementById("submit").addEventListener("click", function () {
     } else {
         par.textContent = "You are incorrect, " + bologna;
       par.style.color = "red";
-    }
-  function coolMan {
-    alert("I am fond of consuming delightful toots that have evacuated by buttocks.");
-  }
 });
   </script>
 </body>
