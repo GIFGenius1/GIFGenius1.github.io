@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <title>GIF Pronunciation</title>
   <style>
+    #farttimer {
+      color: red;
+      text-decoration:underline;
+    }
     .intro {
       background-color: green;
     }
@@ -41,6 +45,11 @@
     <button type="button" onclick="coolMan()">Click here for something brilliant.</button>
     <br>
     <iframe src="I am fond of consumi.m4a" title="Hello World!"></iframe>
+    <br>
+    <button type="button" onclick="fartInterval()">How fast can you fart?</button>
+    <div id="farttimer">
+      
+    </div>
   </div>
   <div class="cool">
     <p>Complete this form for the correct pronunciation:</p>
@@ -54,6 +63,10 @@
     <p id="par"></p>
   </div>
   <script>
+    setInterval(fartInterval, 60000);
+    function fartInterval() {
+      document.getElementById("fartie").textContent += "Did you fart?";
+    }
     function coolMan() {
       alert("I am fond of consuming delightful toots that have evacuated by buttocks.");
     }
